@@ -5,7 +5,7 @@ from src import config
 def load_and_preprocess_data():
     """ Loads data, performs initial cleaning, and splite into train/test sets."""
     df = pd.read_csv(config.DATA_PATH)
-    df = df.drop(columns=['Load_ID'])
+    df = df.drop(columns=['Loan_ID'])
     df['Dependents'] = df['Dependents'].replace("3+", "3")
     
     # Use column names from config
