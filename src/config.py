@@ -28,3 +28,30 @@ LOGISTIC_REGRESSION_PARAMS = {
     "max_iter": 1000,
     "random_state": RANDOM_STATE
 }
+
+# --- Hyperparameter Tuning Search spaces ---
+
+# Note: The 'model__' prefix is required for Scikit-learn pipelines
+# when defining a search grid for a step named 'model'.
+
+# 1. GridSearchCV: A samll, explicit grid to test every combination
+GRID_SEARCH_PARAMS = {
+    'model__solver': ['liblinear', 'saga'],
+    'model__C' : [0.01, 0.1, 0.1, 10, 100]
+} # Total combiantions: 2 * 5 = 10
+
+# 2. RandomizedSearchCV: A distribution to sample from.
+from scipy.stats import loguniform
+
+RANDOM_SEARCH_PARAMS = {
+    'model__solver' : ['liblinear', 'saga'],
+    'model__C': loguniform(1e-2, 1e2), # Sample from a log-uniform distribution
+}
+
+# 3. Optuna: Defines the search space for the objective function.
+OPTUNA_PARAMS = {
+    'n_trials': 10 # Number of trials to run
+}
+
+# Add a separate variable for the number of iterations
+N_ITER_RANDOM_SEARCH = 10
