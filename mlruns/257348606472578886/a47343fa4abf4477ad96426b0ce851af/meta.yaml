@@ -1,0 +1,15 @@
+artifact_uri: file:///home/samuda/samuda/Samuda%20Projects/ML/FinTrustAI-Credit-Risk-Prediction-Loan-Approval-System-ML/mlruns/257348606472578886/a47343fa4abf4477ad96426b0ce851af/artifacts
+end_time: 1761472247942
+entry_point_name: ''
+experiment_id: '257348606472578886'
+lifecycle_stage: active
+run_id: a47343fa4abf4477ad96426b0ce851af
+run_name: skillful-newt-586
+run_uuid: a47343fa4abf4477ad96426b0ce851af
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1761472247930
+status: 3
+tags: []
+user_id: samuda

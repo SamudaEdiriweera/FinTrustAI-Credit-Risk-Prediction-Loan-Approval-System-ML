@@ -1,0 +1,15 @@
+artifact_uri: file:///home/samuda/samuda/Samuda%20Projects/ML/FinTrustAI-Credit-Risk-Prediction-Loan-Approval-System-ML/mlruns/257348606472578886/cd27b69288de47fbbcfd09babb784893/artifacts
+end_time: 1761472242113
+entry_point_name: ''
+experiment_id: '257348606472578886'
+lifecycle_stage: active
+run_id: cd27b69288de47fbbcfd09babb784893
+run_name: spiffy-shrimp-948
+run_uuid: cd27b69288de47fbbcfd09babb784893
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1761472242100
+status: 3
+tags: []
+user_id: samuda

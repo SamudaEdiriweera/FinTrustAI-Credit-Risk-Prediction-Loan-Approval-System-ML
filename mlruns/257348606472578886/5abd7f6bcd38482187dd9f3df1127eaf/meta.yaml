@@ -1,0 +1,15 @@
+artifact_uri: file:///home/samuda/samuda/Samuda%20Projects/ML/FinTrustAI-Credit-Risk-Prediction-Loan-Approval-System-ML/mlruns/257348606472578886/5abd7f6bcd38482187dd9f3df1127eaf/artifacts
+end_time: 1761472242076
+entry_point_name: ''
+experiment_id: '257348606472578886'
+lifecycle_stage: active
+run_id: 5abd7f6bcd38482187dd9f3df1127eaf
+run_name: bemused-flea-970
+run_uuid: 5abd7f6bcd38482187dd9f3df1127eaf
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1761472242064
+status: 3
+tags: []
+user_id: samuda

@@ -1,0 +1,15 @@
+artifact_uri: file:///home/samuda/samuda/Samuda%20Projects/ML/FinTrustAI-Credit-Risk-Prediction-Loan-Approval-System-ML/mlruns/257348606472578886/c33f6ac6a50b49829cc2760ebfba446a/artifacts
+end_time: 1761472242246
+entry_point_name: ''
+experiment_id: '257348606472578886'
+lifecycle_stage: active
+run_id: c33f6ac6a50b49829cc2760ebfba446a
+run_name: upset-ant-328
+run_uuid: c33f6ac6a50b49829cc2760ebfba446a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1761472242222
+status: 3
+tags: []
+user_id: samuda

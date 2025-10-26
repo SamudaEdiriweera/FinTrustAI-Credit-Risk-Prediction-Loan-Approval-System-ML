@@ -1,0 +1,15 @@
+artifact_uri: file:///home/samuda/samuda/Samuda%20Projects/ML/FinTrustAI-Credit-Risk-Prediction-Loan-Approval-System-ML/mlruns/257348606472578886/fbbd75d26eda45cd801df0e4e1c34d1d/artifacts
+end_time: 1761472077884
+entry_point_name: ''
+experiment_id: '257348606472578886'
+lifecycle_stage: active
+run_id: fbbd75d26eda45cd801df0e4e1c34d1d
+run_name: Optuna_Run
+run_uuid: fbbd75d26eda45cd801df0e4e1c34d1d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1761472073153
+status: 3
+tags: []
+user_id: samuda

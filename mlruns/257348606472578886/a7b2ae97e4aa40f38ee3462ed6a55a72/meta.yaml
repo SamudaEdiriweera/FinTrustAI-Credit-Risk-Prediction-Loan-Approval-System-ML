@@ -1,0 +1,15 @@
+artifact_uri: file:///home/samuda/samuda/Samuda%20Projects/ML/FinTrustAI-Credit-Risk-Prediction-Loan-Approval-System-ML/mlruns/257348606472578886/a7b2ae97e4aa40f38ee3462ed6a55a72/artifacts
+end_time: 1761472077545
+entry_point_name: ''
+experiment_id: '257348606472578886'
+lifecycle_stage: active
+run_id: a7b2ae97e4aa40f38ee3462ed6a55a72
+run_name: mercurial-gull-344
+run_uuid: a7b2ae97e4aa40f38ee3462ed6a55a72
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1761472077430
+status: 3
+tags: []
+user_id: samuda
