@@ -1,0 +1,20 @@
+artifact_path: final_loan_approval_model
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.8.19
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.3.2
+mlflow_version: 2.17.2
+model_size_bytes: 4433
+model_uuid: c36eb509dcf043f3a984c0d538e03cbe
+run_id: d589ca8b26454318b03e1915d9324576
+utc_time_created: '2025-10-26 15:12:18.200927'

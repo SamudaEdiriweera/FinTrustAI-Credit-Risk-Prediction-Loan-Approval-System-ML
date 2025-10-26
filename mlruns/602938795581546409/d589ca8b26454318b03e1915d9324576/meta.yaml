@@ -1,0 +1,15 @@
+artifact_uri: file:///home/samuda/samuda/Samuda%20Projects/ML/FinTrustAI-Credit-Risk-Prediction-Loan-Approval-System-ML/mlruns/602938795581546409/d589ca8b26454318b03e1915d9324576/artifacts
+end_time: 1761491541171
+entry_point_name: ''
+experiment_id: '602938795581546409'
+lifecycle_stage: active
+run_id: d589ca8b26454318b03e1915d9324576
+run_name: painted-crane-832
+run_uuid: d589ca8b26454318b03e1915d9324576
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1761491538076
+status: 3
+tags: []
+user_id: samuda
