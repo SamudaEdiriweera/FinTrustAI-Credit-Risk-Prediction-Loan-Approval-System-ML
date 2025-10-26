@@ -24,7 +24,11 @@ ORDINAL_CATEGORIES = [
 NOMINAL_COLS = ["Gender", "Married", "Self_Employed", "Property_Area"]
 
 # --- Model Parameters ---
+# UPDATE with the absolute best params from comparison study (mlflow ui we can see the parameters there)
 LOGISTIC_REGRESSION_PARAMS = {
+    # Use actual best values from the GridSearchCV run
+    "solver": "saga",
+    "C": 0.1,
     "max_iter": 1000,
     "random_state": RANDOM_STATE
 }
