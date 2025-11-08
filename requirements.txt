@@ -2,3 +2,4 @@ pip install mlflow
 pip install joblib
 pip install optuna
 pip install scipy
+pip install "fastapi[all]" pytest
