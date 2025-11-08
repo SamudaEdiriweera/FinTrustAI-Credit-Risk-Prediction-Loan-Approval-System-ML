@@ -67,7 +67,7 @@ def read_root():
 # --- THE FINAL, CORRECTED PREDICTION ENDPOINT ---
 @app.post("/predict")
 def predict(
-    application: LoanApplication = Body(..., example=VALID_EXAMPLE_DATA)
+    application: LoanApplication = Body(..., examples={"Valid Applications": VALID_EXAMPLE_DATA})
 ):
     """ 
     Receives loan application data and returns the loan approval prediction.
@@ -76,7 +76,7 @@ def predict(
         return {"error":"Model is not loaded. Please check server logs." }
     
     # Convert the Pydantic model to a dictionary
-    data = application.dict()
+    data = application.model_dump()
     # Convert the dictionary to a pandas DataFrame
     df = pd.DataFrame([data])
     
