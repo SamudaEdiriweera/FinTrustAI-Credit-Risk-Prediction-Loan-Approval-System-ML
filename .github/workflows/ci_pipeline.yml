@@ -1,0 +1,56 @@
+name : Loan Prediction CI Pipeline
+
+# Controls when the workflow will run
+on:
+  push:
+    branches: ["main"] # Triggers on push events to the main branch
+    paths:
+      - 'src/**'
+      - 'tests/**'
+      - 'app.py'
+      - 'loan_approval_classifier.joblib'
+      - 'Dockerfile'
+      - '.github/workflows/ci_pipeline.yml'
+  pull_request: 
+    branches: ["main"] # Also triggers on pull requests to main
+    paths:
+      - 'src/**'
+      - 'tests/**'
+      - 'app.py'
+      - 'loan_approval_classifier.joblib'
+      - 'Dockerfile'
+      - '.github/workflows/ci_pipeline.yml'
+
+# A workflow run is made up of one or more jobs that can run sequentailly or in parallel
+jobs:
+  build-and-test-backend:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+    
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # 1. Check-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - name: Chekcout repository
+        uses: actions/checkout@v3
+
+      # 2. Set up Python environment
+      - name: Set up Python 3.9
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'
+
+      # 3. Install dependencirs
+      - name: Install dependencies
+        run: | 
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      # 4. Run tests with pytest
+      # This step ensures our API logic is correct
+      - name: Run API Tests
+        run: pytest
+
+      # 5. Build the docker image
+      # This setup ensures the application and its environment can be packeged correctly
+      - name: Build Docker image
+        run: docker build -t loan-predictor-backend .
